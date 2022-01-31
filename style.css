@@ -164,7 +164,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    /*background: url("images/banner.jpg") no-repeat center;*/
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -860,3 +860,18 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+@media (max-width: 480px) {
+    #home {
+      background-image: url("images/mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: contain ;
+    }
+  }
+  @media (min-width: 481px) {
+    #home {
+      background-image: url("images/banner.jpg");
+      background-repeat: no-repeat;
+      background-size: contain ;
+    }
+  }
